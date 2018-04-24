@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+ <html lang="en">
+	 <head>
+	 	<meta charset="UTF-8">
+	 	<title>Proyecto Semestral</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	 </head>
+
+ <body> 	
+ 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+ 		<h1 class="navbar-text">2Do</h1>		
+ 	</nav>
+	<br>
+	<main class="container-fluid">
+	<div class="row">
+	<aside class= "col-md-2 mt-5">
+		<ul class = "list-group">
+			<li class="list-group-item"><i class="fas fa-qrcode"></i>Todos</li>
+			<li class="list-group-item"><i class="fas fa-calendar-alt"></i>Hoy</li>
+			<li class="list-group-item"><i class="fas fa-star"></i>Importantes</li>
+			<li class="list-group-item"><i class="far fa-clock"></i>Calendarizados</li>
+			<li class="list-group-item"><i class="far fa-check-circle"></i>Hechos</li>
+		</ul>
+		<hr>
+			<h4>Trabajo</h4>
+			<ul class = "list-group">
+				<li class="list-group-item"><i class="far fa-circle"></i>Trabajo</li>
+				<li class="list-group-item"><i class="far fa-circle"></i>Negocio</li>
+				<li class="list-group-item"><i class="far fa-circle"></i>Investigaciones</li>
+		<hr>	
+		<main>
+			<h4>Personal</h4>
+			<ul>
+				<div>
+			<button class="btn btn-primary"  data-toggle="modal" data-target="#modalNuevo">Nueva Tarea</button>
+			</div>
+		    </ul>
+		    	
+		    </main>
+		    <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      	<div class="modal-header">
+	        <h5 class="modal-title" id="modalNuevoLabel">Nueva Tarea</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          	<span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form id="nuevaTarea">
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Nombre</label>
+			    <input name="Nombre " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escriba el Nombre...">			    
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Correo</label>
+			    <input name="Correo" type="email" class="form-control" id="exampleInputPassword1" placeholder="Escriba el correo...">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">Telefono</label>
+			    <input name="Telefono" type="text" class="form-control" id="exampleInputPassword1" placeholder="Escriba el Telefono...">
+			  </div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+	        <button id="btnGrabar" type="button" class="btn btn-primary">Guardar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>			
+	</aside>
+    
+		<article class="col-md-6 mt-4 ">
+
+          <h1 class="mt-4 font-italic font-weight-bold"> Hoy</h1>
+			
+			<div class="row">
+				<div class="col-md-12">
+					
+					<div class= "row">
+						<div class="col-md-6">
+			<div class="card" style="width: 18rem;">
+  			<div class="card-body">
+    	<h5 class="card-title">Tarea</h5>
+    <h6 class="card-subtitle mb-2 text-muted">12:00pm</h6>
+    <p class="card-text">Hacer que este sea el sitio web más chido que pueda hacer un papu pro</p>
+    <a href="#" class="card-link">Completar</a>
+    <a href="#" class="card-link">Borrar</a>
+  </div>
+</div>
+</div>
+       
+		<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Tarea</h5>
+    <h6 class="card-subtitle mb-2 text-muted">15:00pm</h6>
+    <p class="card-text">Hacer que este sea el sitio web más chido que pueda hacer un papu pro</p>
+    <a href="#" class="card-link">Completar</a>
+    <a href="#" class="card-link">Borrar</a>
+  </div>
+</div>
+</div>
+
+<div class= "row">   
+  <div class="col-md-4"> 
+  	<div class="card" style="width:18rem;"> 
+  	  <div class="card-body">    
+  	   <h5 class="card-title">Tarea</h5>
+<h6 class="card-subtitle mb-2 text-muted">15:00pm</h6>     
+<p class="card-text">Hacer que este sea el sitio web más chido que pueda hacer un papupro</p>
+     <a href="#" class="card-link">Completar</a>  
+        <a href="#" class="card-link">Borrar</a>   </div> </div>
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Tarea</h5>
+    <h6 class="card-subtitle mb-2 text-muted">15:00pm</h6>
+    <p class="card-text">Hacer que este sea el sitio web más chido que pueda hacer un papu pro</p>
+    <a href="#" class="card-link">Completar</a>
+    <a href="#" class="card-link">Borrar</a>
+  </div>
+</div>
+</div>
+</div>
+</article>
+
+<section class="col-md-4">
+
+<div class="col-md-6">
+<h1 class="mt-4 font-italic font-weight-bold">Mañana</h1>
+	<ul class="list-group">
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+</ul>
+
+<h1 class="mt-4 font-italic font-weight-bold">Pasado Mañana</h1>
+
+<ul class="list-group">
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+  <li class="list-group-item">Aquí van cosas muy chidas </li>
+</ul>
+</div>
+
+</section>
+		
+	</main>
+			
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+ 	<script type="text/javascript" src="bower_components/popper.js/dist/popper.min.js"></script>
+ 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+ </body>
+ </html> 
